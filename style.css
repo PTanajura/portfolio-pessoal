@@ -1,0 +1,132 @@
+/* Configurações Globais */
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: gray;
+}
+
+/* CABEÇALHO */
+
+@keyframes deslizar-parar {
+    0% {
+        transform: translateX(100vw); /* Inicia totalmente fora da tela, à direita */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0); /* Para na posição original da div pai */
+        opacity: 1;
+    }
+}
+
+#cabecalho {
+    display: flex; /* Organiza os elementos filhos em linha */
+    align-items: center;
+    gap: 20px; /* Espaçamento externo entre os elementos filhos */
+    padding: 20px; /* Espaçamento interno entre os elementos filhos */
+    background-color: #1e293b;
+    color: white;
+}
+
+#pedro-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Deixa a imagem redonda */
+    border: 3px solid #38bdf8;
+}
+
+.titulo-deslizante {
+    flex-grow: 1; /* Faz o título ocupar o espaço restante */
+    animation: deslizar-parar 2s ease-out forwards; /* Aplica a animação, suavizando e mantendo até o final */
+}
+
+.titulo-deslizante h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #38bdf8;
+}
+
+.titulo-deslizante p {
+    margin: 5px 0 0 0;
+    font-size: 16px;
+    color: #cbd5e1;
+}
+
+/* CONTEÚDO */
+#conteudo {
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: white;
+    border-left: 4px solid #38bdf8;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: gray;
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+.card li {
+    margin-bottom: 8px;
+}
+
+.card hr {
+    border: 0;
+    border-top: 1px solid #e2e8f0;
+    margin: 15px 0;
+}
+
+.item p {
+    margin: 4px 0;
+    color: gray;
+    line-height: 1.5;
+}
+
+/* RODAPÉ */
+@keyframes chacoalhar {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(-5deg); }
+    40% { transform: rotate(5deg); }
+    60% { transform: rotate(-3deg); }
+    80% { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
+}
+
+#rodape {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+#rodape a {
+    text-decoration: none;
+}
+
+.btn-rede {
+    display: inline-block;
+    margin-top: 5px;
+    background-color: #0077b5;
+    color: white !important;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn-rede:hover {
+    background-color: #005582;
+    text-decoration: none !important;
+    animation: chacoalhar 0.4s ease-in-out infinite;
+}
