@@ -64,6 +64,7 @@ body {
     margin: 30px auto;
     padding-left: 15%;
     padding-right: 15%;
+    background-image: url(imagens/wallpaper.jpg);
 }
 
 .card {
