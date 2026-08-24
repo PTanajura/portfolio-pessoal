@@ -21,13 +21,19 @@ body {
 }
 
 #cabecalho {
+    background-color: #1e293b;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.info{
     display: flex; /* Organiza os elementos filhos em linha */
     align-items: center;
     gap: 20px; /* Espaçamento externo entre os elementos filhos */
     padding: 20px; /* Espaçamento interno entre os elementos filhos */
-    background-color: #1e293b;
     color: white;
 }
+
 
 #pedro-img {
     width: 120px;
@@ -56,7 +62,8 @@ body {
 /* CONTEÚDO */
 #conteudo {
     margin: 30px auto;
-    padding: 0 20px;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .card {
